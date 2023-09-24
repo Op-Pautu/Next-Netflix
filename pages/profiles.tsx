@@ -32,10 +32,12 @@ const Profiles = () => {
           Who is watching?
         </h1>
         <div className="flex items-center justify-center gap-8 mt-10">
-          <div className="" onClick={() => router.push("/")}>
-            <div className="group flex-row w-44 mx-auto">
-              <div
-                className="
+          <div
+            className="group flex-row w-44 mx-auto"
+            onClick={() => router.push("/")}
+          >
+            <div
+              className="
                             w-44
                             h-44
                             rounded-md
@@ -48,17 +50,16 @@ const Profiles = () => {
                             group-hover:border-white
                             overflow-hidden
                         "
-              >
-                <Image
-                  src="/images/default-slate.png"
-                  alt="Profile"
-                  width={176}
-                  height={176}
-                />
-              </div>
-              <div className="mt-4 text-gray-400 text-2xl text-center group-hover:text-white">
-                {user?.name}
-              </div>
+            >
+              <Image
+                src="/images/default-slate.png"
+                alt="Profile"
+                width={176}
+                height={176}
+              />
+            </div>
+            <div className="mt-4 text-gray-400 text-2xl text-center group-hover:text-white">
+              {user?.name}
             </div>
           </div>
         </div>
