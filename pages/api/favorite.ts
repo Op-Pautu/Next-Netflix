@@ -51,6 +51,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             }
 
             const updatedFavoriteIds = without(currentUser.favoriteIds, movieId);
+            // Using pure JS
+            // const updatedFavoriteIds = currentUser.favoriteIds.filter(id => id !== movieId);
 
             const updatedUser = await prismadb.user.update({
                 where: {
