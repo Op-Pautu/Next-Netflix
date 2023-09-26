@@ -1,4 +1,4 @@
-(View the live site)[https://next-nextfix-ochre.vercel.app/]
+[View the live site](https://next-nextfix-ochre.vercel.app/)
 
 
 Or to run the development server:
